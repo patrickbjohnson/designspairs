@@ -1,0 +1,378 @@
+/* Global */
+.border {
+	border: 1px solid red;
+}
+
+
+/* Fonts */
+h1, h2, h3,
+h4, h5, h6, p{
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: always;
+}
+
+h1 {
+	padding-top: 240px;
+	font-size: 5em;
+	font-weight: 400;
+	color: #fff;
+}
+
+p {
+	font-size: 1.250em;
+	font-weight: 500;
+	line-height: 2em;
+	color: #262626;
+}
+
+/* Links */
+
+a:link 		{color: #2b313b; font-weight: bold; text-decoration: none;}
+a:active 	{color: #2b313b; font-weight: bold; text-decoration: none;}
+a:hover		{color: #2b313b; font-weight: bold; text-decoration: none;}
+a:visited	{color: #2b313b; font-weight: bold; text-decoration: none;}
+
+/* Buttons */
+.btn {
+	padding-top: 25px;
+	text-align: center;
+}
+
+.btn input[type=text] {
+	margin: 0 20px;
+	padding: 2px;
+	font-size: 1em;
+}
+
+.btn button {
+	border: 0;
+	 -webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		 -ms-border-radius: 3px;
+		  -o-border-radius: 3px;
+			 border-radius: 3px;
+	display: inline;
+	padding: 10px 15px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	letter-spacing: 1px;
+	background: #3CB43E;
+	color: #fff;
+}
+
+.btn button:hover {
+	background: #36a538;
+}
+
+.btn button:focus {
+	border: none;
+	outline: none;
+	-webkit-box-shadow: 0 0 4px 3px rgba(60,180,62, 0.4);
+	   -moz-box-shadow: 0 0 4px 3px rgba(60,180,62, 0.4);
+		 -o-box-shadow: 0 0 4px 3px rgba(60,180,62, 0.4);
+			box-shadow: 0 0 4px 3px rgba(60,180,62, 0.4);
+}
+
+
+/* General */
+#top {
+	width: 100%;
+	padding: 10px 0;
+	margin: auto;
+	background: -webkit-linear-gradient(#475161, #2a313b) no-repeat, #2b313b;
+	   background: -moz-linear-gradient(#475161, #2a313b) no-repeat, #2b313b;
+		background: -ms-linear-gradient(#475161, #2a313b) no-repeat, #2b313b;
+		 background: -o-linear-gradient(#475161, #2a313b) no-repeat, #2b313b;
+			background: linear-gradient(#475161, #2a313b) no-repeat, #2b313b;
+}
+
+#top p {
+	color: #fff;
+	font-size: .825em;
+	margin-top: -45px;
+}
+
+#bottom {
+	max-width: 100%;
+	height: 250px;
+	background: #fff;
+}
+
+
+
+.header {
+	width: 90%;
+}
+
+.info {
+	width: 700px;
+	margin: auto;
+	padding: 50px 0;
+}
+
+.message {
+	width: 700px;
+	margin: auto;
+	padding: 15px 0;
+	display: none;
+}
+
+.message h2 {
+	padding-top: -10px;
+}
+
+.message p {
+	font-size: .875em;
+	line-height: 1.500em;
+
+}
+
+.social {
+	width: 225px;
+	height: 50px;
+	margin: auto;
+	list-style: none;
+}
+
+.social li {
+	display: inline-block;
+	margin: auto;
+	padding-left: 10px;
+}
+
+.social .fb {
+	padding-left: 19px
+}
+
+
+form * {
+	background: none;
+}
+
+input[type=text], 
+input[type=submit],
+textarea {
+	margin: 2px;
+	padding: 0;
+	border: none;
+	border-bottom: 1px dotted #bbb;
+	 -webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		 -ms-border-radius: 0;
+		  -o-border-radius: 0;
+	border-radius: 0;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	color: #a9a9a9;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: always;
+	background: none;
+	 -webkit-appearance: none;
+		-moz-appearance: none;
+			 appearance: none;
+	outline: none;
+}
+
+select[name=profession],
+select[name=pairprofession],
+select[name=location]{
+	margin: 2px;
+	padding: 3px 10px;
+	border: 1px dotted #bbb;
+	 -webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		 -ms-border-radius: 3px;
+		  -o-border-radius: 3px;
+			 border-radius: 3px;
+	font-family: 'Raleway', sans-serif;
+	font-size: .850em;
+	font-weight: 500;
+	color: #bbb;
+	background: none;
+	 -webkit-appearance: none;
+		-moz-appearance: none;
+			 appearance: none;
+	outline: none;
+	cursor: pointer;
+}
+
+select[name=profession]:focus,
+select[name=pairprofession]:focus,
+select[name=location]:focus {
+	margin: 3px;
+	border: none;
+	-webkit-box-shadow: 0 0 4px 1px rgba(43,49,59, 0.4);
+	   -moz-box-shadow: 0 0 4px 1px rgba(43,49,59, 0.4);
+		 -o-box-shadow: 0 0 4px 1px rgba(43,49,59, 0.4);
+			box-shadow: 0 0 4px 1px rgba(43,49,59, 0.4);
+}
+
+footer {
+	padding-top: 45px;
+	margin: auto;
+}
+
+footer p {
+	font-size: .500em;
+	text-align: center;
+	color: #a9a9a9;
+}
+
+
+/* Misc */
+
+#heart {
+	color: #E32C27;
+}
+
+
+
+
+
+/*=================*\ 
+		Tablet 
+\*=================*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+
+
+
+
+
+
+
+
+
+
+/*=================*\ 
+		Mobile 
+\*=================*/
+@media only screen and (max-width: 480px) {
+
+/* Type Stylings */
+h1 {
+	padding-top: 25px;
+	font-size: 3em;
+	font-weight: 500;
+	text-align: center;
+}
+
+h2 {
+
+}
+
+p {
+ font-size: 1.500em;
+ text-align: left;
+}
+
+/* Navigation */
+nav {
+	width: 100%;
+	margin: 10px auto;
+	list-style: none;
+	text-align: center;
+	position: relative;
+}
+
+nav li{
+	display: inline-block;
+}
+
+/* Services Slide */
+
+#top p {
+	color: #fff;
+	font-size: .825em;
+	margin-top: -25px;
+	text-align: center;
+}
+
+.info {
+	width: 90%;
+	padding: 10px;
+	margin: auto;
+}
+
+.message {
+	width: 90%;
+	padding: 10px;
+	margin: auto;
+	text-align: center;
+}
+
+.btn button {
+	margin-top: 10px;
+}
+
+.btn input[type=text] {
+	padding: 9px;
+}
+
+input[type=text],
+select[name=profession],
+select[name=pairprofession],
+select[name=location]	{
+	margin: 2px;
+	padding: 5px 10px;
+	border: 1px dotted #bbb;
+	 -webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		 -ms-border-radius: 3px;
+		  -o-border-radius: 3px;
+			 border-radius: 3px;
+	font-family: 'Raleway', sans-serif;
+	font-size: .850em;
+	font-weight: 500;
+	color: #bbb;
+	background: none;
+	 -webkit-appearance: none;
+		-moz-appearance: none;
+			 appearance: none;
+	outline: none;
+	cursor: pointer;
+}
+
+input[type=text]:focus,
+select[name=profession]:focus,
+select[name=pairprofession]:focus,
+select[name=location]:focus {
+	border: none;
+	-webkit-box-shadow: 0 0 4px 1px rgba(43,49,59, 0.4);
+	   -moz-box-shadow: 0 0 4px 1px rgba(43,49,59, 0.4);
+		 -o-box-shadow: 0 0 4px 1px rgba(43,49,59, 0.4);
+			box-shadow: 0 0 4px 1px rgba(43,49,59, 0.4);
+}
+
+.social {
+	width: 225px;
+	height: 50px;
+	margin: auto;
+	list-style: none;
+}
+
+footer {
+	padding-top: 300px;
+	margin: auto;
+}
+
+.social li {
+	display: inline-block;
+	margin: auto;
+	padding-left: 5px;
+}
+
+.social .fb {
+	padding-left: 5px
+}
+
+
+}
+
+
+
+
