@@ -39,22 +39,22 @@
         </div><!-- top -->
         <div id="bottom">
             <div class="info">
-                 <form action="#">
-                    <p>Hi, I'm <input type="text" name="fname" placeholder="name" tabindex="1"> and I'm a 
-                        <select name="profession" reuiqred tabindex="2">
+                 <form id="signupform" action="#">
+                    <p>Hi, I'm <input id="name" type="text" name="fname" placeholder="name" tabindex="1"> and I'm a 
+                        <select id="profession" name="profession" reuiqred tabindex="2">
                             <option type="text" value="none" disabled selected>select your role</option>
                             <option type="text" value="designer">designer</option>
                             <option value="developer">developer</option>
                             <option value="designer &amp; developer">designer &amp; developer</option>
                         </select>
                     looking to meet a
-                        <select name="pairprofession" reuiqred tabindex="3">
+                        <select id="pairprofession" name="pairprofession" reuiqred tabindex="3">
                             <option type="text" value="none" disabled selected>select your partner</option>
                             <option type="text" value="designer">designer</option>
                             <option value="developer">developer</option>
                             <option value="designer &amp; developer">designer &amp; developer</option>
                         </select>
-                    in <select name="location" reuiqred tabindex="4">
+                    in <select id="location" name="location" reuiqred tabindex="4">
                             <option type="text" value="default location" disabled selected>location (optional)</option>
                             <option type="text" value="New York" p>New York</option>
                             <option value="Boston">Boston</option>
@@ -62,7 +62,7 @@
                         </select>
                     </p>
                     <div class="btn">
-                        <input type="text" name="email" placeholder="email@address.com" tabindex="5">
+                        <input id="email" type="text" name="email" placeholder="email@address.com" tabindex="5">
                         <button value="submit">submit</button>
                     </div>
                 </form><!-- form -->
@@ -72,7 +72,7 @@
                 <h2>Thank you!</h2>
                     <p>To complete the subscription process, please click the link in the email we just sent you.</p>
                     <p>Be sure to share with friends!</p>
-                    <div class="social border">
+                    <div class="social">
                         <li><div class="fb fb-like" data-href="http://www.designpairs.com" data-send="false" data-width="300" data-show-faces="false" layout="button_count"></div></li>
                         <li><div class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.designpairs.com" data-text="I just signed up to meet other designers &amp; developers using @designpairs check it out now at">Tweet</a></div></li>  
                     </div><!-- social -->   
@@ -87,6 +87,7 @@
     <!-- Javascript Files -->
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/happy.js"></script>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     
 
