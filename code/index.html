@@ -19,6 +19,7 @@
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,700' rel='stylesheet' type='text/css'>
 
         <script src="js/modernizr-2.6.2.min.js"></script>
+        
 
     </head>
     <body>
@@ -39,34 +40,40 @@
         </div><!-- top -->
         <div id="bottom">
             <div class="info">
-                 <form id="signupform" action="#">
-                    <p>Hi, I'm <input id="name" type="text" name="fname" placeholder="name" tabindex="1"> and I'm a 
-                        <select id="profession" name="profession" reuiqred tabindex="2">
-                            <option type="text" value="none" disabled selected>select your role</option>
-                            <option type="text" value="designer">designer</option>
-                            <option value="developer">developer</option>
-                            <option value="designer &amp; developer">designer &amp; developer</option>
-                        </select>
-                    looking to meet a
-                        <select id="pairprofession" name="pairprofession" reuiqred tabindex="3">
-                            <option type="text" value="none" disabled selected>select your partner</option>
-                            <option type="text" value="designer">designer</option>
-                            <option value="developer">developer</option>
-                            <option value="designer &amp; developer">designer &amp; developer</option>
-                        </select>
-                    in <select id="location" name="location" reuiqred tabindex="4">
-                            <option type="text" value="default location" disabled selected>location (optional)</option>
-                            <option type="text" value="New York" p>New York</option>
-                            <option value="Boston">Boston</option>
-                            <option value="Chicago">Chicago</option>
-                        </select>
-                    </p>
+                 <form id="form" action="#">
+                    <div class="formmesage"><p>Hi, I'm </p></div>
+                        <div class="nameinput">
+                            <input id="name" class="required" type="text" name="name" placeholder="name" tabindex="1"> 
+                        </div>
+                    <div class="formmesage"><p>and I'm a </p></div>
+                        <div class="selection">
+                            <select id="profession" name="profession" tabindex="2">
+                                <option type="text" value="designer">designer</option>
+                                <option value="developer">developer</option>
+                                <option value="designer &amp; developer">designer &amp; developer</option>
+                            </select>
+                        </div>
+                    <div class="formmesage"><p>looking to meet other </p></div>
+                        <div class="selection">
+                            <select id="pairprofession" name="pairprofession" tabindex="3">
+                                <option type="text" value="designer">designers</option>
+                                <option value="developer">developers</option>
+                                <option value="designer &amp; developer">designer &amp; developers</option>
+                            </select>
+                        </div>
+                    <div class="formmesage "><p>in</p></div>
+                        <div class="selection">
+                            <select id="location" name="location" tabindex="4">
+                                <option type="text" value="New York" p>New York</option>
+                                <option value="Boston">Boston</option>
+                                <option value="Chicago">Chicago</option>
+                            </select>
+                        </div>
                     <div class="btn">
-                        <input id="email" type="text" name="email" placeholder="email@address.com" tabindex="5">
-                        <button value="submit">submit</button>
+                        <input id="email" class="required email" type="text" name="email" placeholder="email@address.com" tabindex="5">
+                        <button type="submit">submit</button>
                     </div>
                 </form><!-- form -->
-                  
             </div><!-- info -->
             <div class="message">
                 <h2>Thank you!</h2>
@@ -78,18 +85,18 @@
                     </div><!-- social -->   
             </div><!-- message -->
         </div><!-- bottom -->
-        <footer><p>with <span id="heart">&hearts;</span> from <a href="#">Patrick</a> &amp; <a href="#">Edward</a></p></footer>
+        <footer>
+            <p>with <span id="heart">&hearts;</span> from <a href="#">Patrick</a> &amp; <a href="#">Edward</a></p>
+        </footer><!-- footer -->
         
-        
-        
-    
+
 
     <!-- Javascript Files -->
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/happy.js"></script>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-    
-
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script type="text/javascript"></script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    </script>
     </body>
 </html>

@@ -1,36 +1,49 @@
 $(document).ready(function(){
-	// $(".btn button").on("click", function(){
-	// 	$(".info").delay(400).fadeOut("slow");
-	// 	$(".message").delay(1000).fadeIn("fast");
-	// })
 
-	// happy form validation
+	$("#form").validate({
+        submitHandler : function(form){
+        	$("#form").delay(500).fadeOut("slow");
+	 		$(".message").delay(1000).fadeIn("slow");
+        }
+    });
 
-	$('#signupform').isHappy({
-    fields: {
-      // reference the field you're talking about, probably by `id`
-      // but you could certainly do $('[name=name]') as well.
-      '#name': {
-        required: true,
-        message: 'Please give name'
-      },
-      '#profession': {
-        required: true,
-        message: 'What do you do?'
-      },
-      '#pairprofession': {
-        required: true,
-        message: 'Who do you want to meet?'
-      },
-      '#location': {
-        required: true,
-        message: 'Where do you live?'
-      },
-      '#email': {
-        required: true,
-        message: 'Your email tells us you are'
-      }
-    }
-  });
+
+
+
+
+    
 });
+	// $("#form").validate();
+	// 	$("#form").submit(function(){
+	// 		$("button").click(function(){
+	// 			$("#form").delay(500).fadeOut("slow");
+	// 			$(".message").delay(1000).fadeIn("slow");
+	// 			return false;
+	// 		})
+			
+	// 	})
 
+	    // $('#form').on("submit", function(){
+	    // 	return false;
+	    //     if ($("#form").valid()){
+	    //         console.log("works");
+	    //         form.submit();
+	    //     } else {
+	    //         console.log("didn't work");
+	    //     }
+
+	    // });
+// s
+
+
+// $("#form").delay(400).fadeOut("slow");
+// $(".message").delay(1000).fadeIn("slow");
+
+		// $("#form").submit(function(){
+
+		// 	return false;
+			
+
+		// $("button").click(function(){
+		// 		$("#form").submit();
+		// });
