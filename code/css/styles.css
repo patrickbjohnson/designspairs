@@ -1,7 +1,5 @@
 /* Global */
-.border {
-	border: 1px solid red;
-}
+
 
 
 /* Fonts */
@@ -239,52 +237,12 @@ select[name=location]:focus {
 			box-shadow: 0 0 4px 1px rgba(43,49,59, 0.4);
 }
 
-select[option] {
-	color: blue;
-} 
-
-select[name=profession].error,
-select[name=pairprofession].error,
-select[name=location].error {
-	margin: 2px;
-	padding: 5px 10px;
-	border: 1px solid #f3a9a9;
-	 -webkit-border-radius: 3px;
-		-moz-border-radius: 3px;
-		 -ms-border-radius: 3px;
-		  -o-border-radius: 3px;
-			 border-radius: 3px;
-	font-size: .675em;
-	color: #f3a9a9;
-	background: none;
-	 -webkit-appearance: none;
-		-moz-appearance: none;
-			 appearance: none;
-	-webkit-box-shadow: 0 0 4px 1px rgba(224,40,40, 0.4);
-	   -moz-box-shadow: 0 0 4px 1px rgba(224,40,40, 0.4);
-		 -o-box-shadow: 0 0 4px 1px rgba(224,40,40, 0.4);
-			box-shadow: 0 0 4px 1px rgba(224,40,40, 0.4);
-	
-}
 
 /* Misc */
 
 #heart {
 	color: #E32C27;
 }
-
-
-
-.needsfilled {
-	background:red;
-	color:white;
-}
-
-
-
-
-
-
 
 
 /*=================*\ 
